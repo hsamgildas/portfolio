@@ -1,29 +1,30 @@
-echo '<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Gildas HUMURIZA - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: "Poppins", sans-serif;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #121212;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #1e1e1e;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         header {
             text-align: center;
             padding: 50px 0;
-            background: url("https://source.unsplash.com/random/1600x400?technology") no-repeat center center/cover;
+            background: url('https://source.unsplash.com/random/1600x400?technology') no-repeat center center/cover;
             color: #fff;
         }
         header h1 {
@@ -37,7 +38,7 @@ echo '<!DOCTYPE html>
         }
         section {
             margin-bottom: 40px;
-            padding: 0 20px;
+            padding: 20px;
         }
         section h2 {
             border-bottom: 2px solid #333;
@@ -46,15 +47,17 @@ echo '<!DOCTYPE html>
             font-size: 1.8em;
             font-weight: 600;
         }
+        .skills, .experience, .projects, .education {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
         .skills ul, .experience ul, .projects ul, .education ul {
             list-style: none;
             padding: 0;
         }
         .skills ul li, .experience ul li, .projects ul li, .education ul li {
             margin-bottom: 10px;
-        }
-        .contact p {
-            font-size: 1.2em;
         }
         .skills ul li, .contact a {
             display: inline-block;
@@ -71,6 +74,15 @@ echo '<!DOCTYPE html>
             height: auto;
             border-radius: 5px;
             margin-bottom: 10px;
+        }
+        .icon {
+            color: #ff9900;
+            margin-right: 10px;
+        }
+        .contact a {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -90,20 +102,20 @@ echo '<!DOCTYPE html>
         <section class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Azure Administration</li>
-                <li>HTML & Bootstrap</li>
-                <li>Java</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>SQL</li>
-                <li>Oracle</li>
-                <li>Windows OS</li>
-                <li>Windows Server</li>
-                <li>Dynamics 365</li>
-                <li>Jira</li>
-                <li>ClickUp</li>
-                <li>ITIL</li>
-                <li>Agile</li>
+                <li><i class="fas fa-cloud icon"></i>Azure Administration</li>
+                <li><i class="fas fa-code icon"></i>HTML & Bootstrap</li>
+                <li><i class="fas fa-code icon"></i>Java</li>
+                <li><i class="fas fa-code icon"></i>PHP</li>
+                <li><i class="fas fa-database icon"></i>MySQL</li>
+                <li><i class="fas fa-database icon"></i>SQL</li>
+                <li><i class="fas fa-database icon"></i>Oracle</li>
+                <li><i class="fas fa-desktop icon"></i>Windows OS</li>
+                <li><i class="fas fa-server icon"></i>Windows Server</li>
+                <li><i class="fas fa-tools icon"></i>Dynamics 365</li>
+                <li><i class="fas fa-tools icon"></i>Jira</li>
+                <li><i class="fas fa-tools icon"></i>ClickUp</li>
+                <li><i class="fas fa-project-diagram icon"></i>ITIL</li>
+                <li><i class="fas fa-project-diagram icon"></i>Agile</li>
             </ul>
         </section>
         
@@ -151,11 +163,11 @@ echo '<!DOCTYPE html>
         
         <section class="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:hsamgildas@gmail.com">hsamgildas@gmail.com</a></p>
-            <p>Phone: +250 785 448 436</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername">GitHub</a></p>
+            <p>Email: <a href="mailto:hsamgildas@gmail.com"><i class="fas fa-envelope icon"></i>hsamgildas@gmail.com</a></p>
+            <p>Phone: <a href="tel:+250785448436"><i class="fas fa-phone icon"></i>+250 785 448 436</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin icon"></i>LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/yourusername"><i class="fab fa-github icon"></i>GitHub</a></p>
         </section>
     </div>
 </body>
-</html>' > index.html
+</html>
